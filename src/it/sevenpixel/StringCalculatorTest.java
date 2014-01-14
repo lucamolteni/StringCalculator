@@ -55,7 +55,7 @@ public class StringCalculatorTest {
 
     @Test
     public void shouldAcceptArbitrarySeparator() throws Exception {
-        checkCalculatorSum("\\;\n2;3;5",10);
+        checkCalculatorSum("//;\n2;3;5",10);
     }
 
 
@@ -82,6 +82,6 @@ public class StringCalculatorTest {
 
     @Test
     public void shouldAcceptArbitraryLengthSeparator() throws Exception {
-        checkCalculatorSum("\\;;;\n2;;;3;;;5;;;7",17);
+        checkCalculatorSum("//[;;;]\n2;;;3;;;5;;;7",17);
     }
 }
